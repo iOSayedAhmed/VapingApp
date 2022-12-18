@@ -10,7 +10,6 @@ import UIKit
 class DetailsVC: UIViewController  {
     
     var product:ProductModel?
-    var cachedProducts:ProductsList?
     @IBOutlet weak var productImageView: UIImageView!
     
     @IBOutlet weak var priceLabel: UILabel!

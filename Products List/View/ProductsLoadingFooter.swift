@@ -23,7 +23,7 @@ class ProductsLoadingFooter: UICollectionReusableView {
         label.font = .systemFont(ofSize: 17)
         
         let stackView = UIStackView(arrangedSubviews: [spinner , label])
-        stackView.spacing = 8
+        stackView.spacing = 2
         stackView.axis = .vertical
         
         stackView.frame = self.frame

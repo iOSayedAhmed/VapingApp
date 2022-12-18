@@ -40,31 +40,6 @@ class ProductsCell: UICollectionViewCell {
        self.layoutIfNeeded()
       }
     
-    func preferredLayoutSizeFittingSize(_ targetSize: CGSize)-> CGSize {
-
-        let originalFrame = self.frame
-        let originalPreferredMaxLayoutWidth = self.productDescriptionLabel.preferredMaxLayoutWidth
-
-
-        var frame = self.frame
-        frame.size = targetSize
-        self.frame = frame
-
-        self.setNeedsLayout()
-        self.layoutIfNeeded()
-        self.productDescriptionLabel.preferredMaxLayoutWidth = self.productDescriptionLabel.bounds.size.width
-
-
-        // calling this tells the cell to figure out a size for it based on the current items set
-        let computedSize = self.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
-
-        let newSize = CGSize(width:targetSize.width, height:computedSize.height)
-
-        self.frame = originalFrame
-        self.productDescriptionLabel.preferredMaxLayoutWidth = originalPreferredMaxLayoutWidth
-
-        return newSize
-    }
     
 }
 extension ProductsCell {
