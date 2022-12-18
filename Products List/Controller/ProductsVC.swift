@@ -139,7 +139,7 @@ extension ProductsVC : UICollectionViewDataSource,UICollectionViewDelegate,UICol
 
         let estimatedFrame2 = NSString(string: "\(products[indexPath.item].price)").boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
 
-        return CGSize(width:(collectionView.frame.size.width) / 2 , height: (estimatedFrame.height + estimatedFrame2.height ) + CGFloat(products[indexPath.item].image.height) + 100 )
+        return CGSize(width:(collectionView.frame.size.width) / 2 , height: (estimatedFrame.height + estimatedFrame2.height ) + CGFloat(products[indexPath.item].image.height) + 85 )
    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {

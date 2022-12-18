@@ -31,15 +31,16 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="XZt-2p-aYm" firstAttribute="centerY" secondItem="Wdz-xn-m16" secondAttribute="centerY" id="AZt-SE-RTz"/>
+                                    <constraint firstItem="XZt-2p-aYm" firstAttribute="centerX" secondItem="Wdz-xn-m16" secondAttribute="centerX" id="kpl-Qa-PaN"/>
+                                </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="A1p-gx-gzT">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="A1p-gx-gzT">
                                 <rect key="frame" x="14.666666666666671" y="318.66666666666669" width="180" height="94.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="954$" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijF-ck-iD1">
                                         <rect key="frame" x="0.0" y="0.0" width="180" height="23.333333333333332"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="23.329999999999998" id="ftt-CT-0Ws"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                         <color key="textColor" red="0.21371036769999999" green="0.51350224020000002" blue="0.5938920379" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -48,7 +49,6 @@
                                         <rect key="frame" x="0.0" y="33.333333333333314" width="180" height="61"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="180" id="meh-6w-Oo9"/>
-                                            <constraint firstAttribute="height" constant="61" id="yga-W4-bza"/>
                                         </constraints>
                                         <string key="text">1 - Lorem ipsum
 vhkkectzcnxabongamui
