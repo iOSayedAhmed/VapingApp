@@ -17,9 +17,7 @@ class ProductsVC: UIViewController  {
                     ToastManager.shared.showToast(message: "   You're Offline   ", type: .error, view: self.view)
                 }
             }else{
-                DispatchQueue.main.async {
-                    ToastManager.shared.showToast(message: "   You're Online   ", type: .message, view: self.view)
-                }
+             // You're Online
             }
         }
     }
