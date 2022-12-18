@@ -8,7 +8,6 @@
 import UIKit
 
 class ProductsVC: UIViewController  {
-    
     private var products = [ProductModel]()
     private var isOffline:Bool = false {
         didSet{
@@ -17,7 +16,7 @@ class ProductsVC: UIViewController  {
                     ToastManager.shared.showToast(message: "   You're Offline   ", type: .error, view: self.view)
                 }
             }else{
-             // You're Online
+                // You're Online
             }
         }
     }
@@ -34,7 +33,7 @@ class ProductsVC: UIViewController  {
         collectionView.dataSource = self
         registerCollectionViewCells()
         
-        self.collectionView.alpha = 0.7
+        //  self.collectionView.alpha = 0.7
         
     }
     
@@ -131,16 +130,16 @@ extension ProductsVC : UICollectionViewDataSource,UICollectionViewDelegate,UICol
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let approximateWidthOfContent = view.frame.size.width
-
+        
         let size = CGSize(width: approximateWidthOfContent, height: 1000)
-
+        
         let attributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 17)]
         let estimatedFrame = NSString(string: products[indexPath.item].productDescription).boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
-
+        
         let estimatedFrame2 = NSString(string: "\(products[indexPath.item].price)").boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
-
+        
         return CGSize(width:(collectionView.frame.size.width) / 2 , height: (estimatedFrame.height + estimatedFrame2.height ) + CGFloat(products[indexPath.item].image.height) + 85 )
-   }
+    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
@@ -189,4 +188,6 @@ extension ProductsVC : UICollectionViewDataSource,UICollectionViewDelegate,UICol
         }
     }
 }
+
+
 

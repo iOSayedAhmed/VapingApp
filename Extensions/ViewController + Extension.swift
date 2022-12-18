@@ -12,8 +12,8 @@ extension UIViewController {
     // custom func for present View Controller as Navigation Controller
     func presentDetail(_ viewControllerTopresent : UIViewController){
         let transition = CATransition()
-        transition.duration = 0.3
-        transition.type = CATransitionType.push
+        transition.duration = 0.8
+        transition.type = CATransitionType.fade
         transition.subtype = CATransitionSubtype.fromRight
         transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
         self.view.window?.layer.add(transition, forKey: kCATransition)
@@ -38,8 +38,8 @@ extension UIViewController {
     // custom func for dismiss View Controller as Navigation Controller
     func dismissDetail(){
         let transition = CATransition()
-        transition.duration = 0.3
-        transition.type = CATransitionType.push
+        transition.duration = 0.8
+        transition.type = CATransitionType.fade
         transition.subtype = CATransitionSubtype.fromLeft
         transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
         self.view.window?.layer.add(transition, forKey: kCATransition)

@@ -20,7 +20,6 @@ class DetailsVC: UIViewController  {
         title = "Products Details"
         view.alpha = 1
         fillData()
-        print(product)
     }
     
 

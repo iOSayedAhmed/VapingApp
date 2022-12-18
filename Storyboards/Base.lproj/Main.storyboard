@@ -164,7 +164,7 @@ Devices will charge fully in under 20 minutes </string>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vDj-bj-P9A">
                                 <rect key="frame" x="5" y="47" width="365" height="731"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93333333333333335" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gHx-ef-6EQ">
                                     <size key="itemSize" width="141" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>

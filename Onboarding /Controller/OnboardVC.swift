@@ -78,7 +78,6 @@ Devices will charge fully in under 20 minutes
             print("presentHomeVC")
             collectionView.isScrollEnabled = false
             let vc = storyboard?.instantiateViewController(withIdentifier: "ProductsVC") as! ProductsVC
-            vc.view.backgroundColor = .lightGray
             let nav = UINavigationController(rootViewController: vc)
             nav.navigationBar.tintColor = .black
             nav.modalPresentationStyle = .fullScreen
