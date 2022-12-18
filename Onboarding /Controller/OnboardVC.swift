@@ -126,7 +126,7 @@ extension OnboardVC : UICollectionViewDelegate, UICollectionViewDataSource , UIC
     
 }
 extension OnboardVC : UIViewControllerTransitioningDelegate {
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController,   source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transition.presenting = true
         transition.originFrame = continueButton.frame
         return transition
